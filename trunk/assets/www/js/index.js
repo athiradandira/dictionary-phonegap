@@ -1,18 +1,15 @@
-		
+$(document).bind("mobileinit", function(){
+	navigator.notification.alert("Hello World of PhoneGap");
+});
 
 var showMessageBox = function() {
 	navigator.notification.alert("Hello World of PhoneGap");
 }
 
-function init() {
-		//document.addEventListener("deviceready", showMessageBox, true);
-}
-
 function traTu(){	
-	 //$.mobile.changePage("#tratu-page");
 	$.mobile.showPageLoadingMsg();
-	$.mobile.changePage( "tratu.html", { transition: "slideup"} );
-	$.mobile.hidePageLoadingMsg();
+	$.mobile.changePage( "#tratu-page", { transition: "slideup"} );
+	$.mobile.hidePageLoadingMsg();	
 }
 
 function hienThiThongTin(){
