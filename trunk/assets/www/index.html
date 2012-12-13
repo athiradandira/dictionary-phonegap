@@ -10,9 +10,7 @@
 	<script	src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>	
 	<script type="text/javascript" src="js/index.js"></script>	
 	<script type="text/javascript">				
-		function keyPressHandler(){
-			alert('hello');
-		}
+		
 	</script>
 
 </head>
@@ -41,7 +39,8 @@
 		<!-- /header -->
 
 		<div data-role="content">
-			<input class="selector" type="search" name="search" id="search-text" value="" onkeypress="keyPressHandler()"/>											
+			<input class="selector" type="search" name="search" id="search-text" value="" onkeyup="keyUpHandler()"/>
+			<input type="text"  id="char-pressed"></input>											
 		</div>
 		<!-- /content -->
 

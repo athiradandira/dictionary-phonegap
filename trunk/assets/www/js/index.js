@@ -23,3 +23,9 @@ function capNhatDuLieu(){
 function thoatUngDung(){
 	alert('thoatUngDung');
 }
+
+function keyUpHandler(){
+	//alert($('#search-text').val());
+	var result = $("#search-text").val();
+	$("#char-pressed").val(result);
+}
